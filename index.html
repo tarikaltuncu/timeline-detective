@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Detective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Timeline Detective</h1>
+            <p>Analyze time spent at specific locations from your Google Maps timeline</p>
+        </header>
+        
+        <div class="upload-section">
+            <h2>1. Upload Your Timeline JSON File</h2>
+            <details>
+                <summary>How to get your Google Maps Timeline data</summary>
+                <div class="help-content">
+                    <h3>Getting Your Google Maps Timeline Data</h3>
+                    
+                    <h4>Android</h4>
+                    <ol>
+                        <li>Go to settings</li>
+                        <li>Tap Location -> Location Services -> Timeline</li>
+                        <li>Tap <code>Export Timeline data</code>, save the json file.</li>
+                    </ol>
+                    
+                    <h4>iOS</h4>
+                    <ol>
+                        <li>Go to Google Maps app</li>
+                        <li>Tap profile icon -> Your timeline -> three dots upper right -> location & privacy settings</li>
+                        <li><code>Export Timeline data</code>, save the json file.</li>
+                    </ol>
+                </div>
+            </details>
+            <input type="file" id="fileInput" accept=".json">
+            <div class="file-info" id="fileInfo"></div>
+        </div>
+
+        <div class="map-section">
+            <h2>2. Select Location & Settings</h2>
+            <div id="map"></div>
+            <div class="map-controls">
+                <div class="control-group">
+                    <label for="radiusInput">Proximity radius (meters):</label>
+                    <input type="number" id="radiusInput" value="500" min="50" max="10000">
+                </div>
+                <div class="control-group">
+                    <label for="timeGranularity">Time Granularity:</label>
+                    <select id="timeGranularity">
+                        <option value="day" selected>Daily</option>
+                        <option value="week">Weekly</option>
+                        <option value="month">Monthly</option>
+                    </select>
+                </div>
+                <button id="analyzeBtn" disabled>Analyze Time Spent</button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>3. Results</h2>
+            <div id="resultsContainer" class="hidden">
+                <div class="results-summary">
+                    <h3>Time spent at selected location</h3>
+                    <p id="totalTime">Total time: -</p>
+                </div>
+                <div class="results-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time Spent</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody"></tbody>
+                    </table>
+                </div>
+                <button id="exportBtn" class="export-btn">Export Results (CSV)</button>
+            </div>
+            <div id="noResults" class="hidden">
+                <p>No time spent at the selected location.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>

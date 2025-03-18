@@ -1,0 +1,210 @@
+{
+  "semanticSegments": [
+    {
+      "startTime": "2023-05-17T14:34:35.000+03:00",
+      "endTime": "2023-05-17T18:45:52.000+03:00",
+      "startTimeTimezoneUtcOffsetMinutes": 180,
+      "endTimeTimezoneUtcOffsetMinutes": 180,
+      "visit":
+      {
+          "hierarchyLevel": 0,
+          "probability": 0.668185293674469,
+          "topCandidate":
+          {
+              "placeId": "ChIJL3xF-qrJyhSR7wI3aaCsXY5",
+              "semanticType": "TYPE_A",
+              "probability": 0.7967959642410278,
+              "placeLocation":
+              {
+                  "latLng": "40.7128345°, -74.0060567°"
+              }
+          }
+      }
+  },
+  {
+      "startTime": "2023-05-17T18:00:00.000+03:00",
+      "endTime": "2023-05-17T20:00:00.000+03:00",
+      "timelinePath":
+      [
+          {
+              "point": "40.7145192°, -74.0071662°",
+              "time": "2023-05-17T18:46:00.000+03:00"
+          },
+          {
+              "point": "40.7157486°, -74.0090785°",
+              "time": "2023-05-17T18:47:00.000+03:00"
+          },
+          {
+              "point": "40.7163000°, -74.0108746°",
+              "time": "2023-05-17T18:47:00.000+03:00"
+          },
+          {
+              "point": "40.7172960°, -74.0127195°",
+              "time": "2023-05-17T18:49:00.000+03:00"
+          },
+          {
+              "point": "40.7183882°, -74.0145451°",
+              "time": "2023-05-17T18:53:00.000+03:00"
+          },
+          {
+              "point": "40.7192435°, -74.0164185°",
+              "time": "2023-05-17T18:54:00.000+03:00"
+          }
+      ]
+  },
+  {
+      "startTime": "2023-05-17T18:45:52.000+03:00",
+      "endTime": "2023-05-17T18:54:12.000+03:00",
+      "startTimeTimezoneUtcOffsetMinutes": 180,
+      "endTimeTimezoneUtcOffsetMinutes": 180,
+      "activity":
+      {
+          "start":
+          {
+              "latLng": "40.7145192°, -74.0071662°"
+          },
+          "end":
+          {
+              "latLng": "40.7192435°, -74.0164185°"
+          },
+          "distanceMeters": 1417.365234375,
+          "probability": 0.9795435667037964,
+          "topCandidate":
+          {
+              "type": "IN_PASSENGER_VEHICLE",
+              "probability": 0.9032617211341858
+          },
+          "parking":
+          {
+              "location":
+              {
+                  "latLng": "40.7172748°, -74.0126467°"
+              },
+              "startTime": "2023-05-17T18:49:27.000+03:00"
+          }
+      }
+  }
+  ],
+  "rawSignals": [
+    {
+      "activityRecord":
+      {
+          "probableActivities":
+          [
+              {
+                  "type": "STILL",
+                  "confidence": 0.4399999976158142
+              },
+              {
+                  "type": "IN_VEHICLE",
+                  "confidence": 0.319999999552965164
+              },
+              {
+                  "type": "ON_FOOT",
+                  "confidence": 0.319999999552965164
+              },
+              {
+                  "type": "WALKING",
+                  "confidence": 0.219999999552965164
+              },
+              {
+                  "type": "IN_RAIL_VEHICLE",
+                  "confidence": 0.119999999552965164
+              },
+              {
+                  "type": "UNKNOWN",
+                  "confidence": 0.509999999776482582
+              },
+              {
+                  "type": "IN_ROAD_VEHICLE",
+                  "confidence": 0.209999999776482582
+              }
+          ],
+          "timestamp": "2023-05-18T00:14:45.000+03:00"
+      }
+  },
+    {
+      "position": {
+        "LatLng": "40.7214855°, -74.0186991°",
+        "accuracyMeters": 100,
+        "altitudeMeters": 1241.40000915527344,
+        "source": "WIFI",
+        "timestamp": "2023-05-16T00:49:52.000+03:00",
+        "speedMetersPerSecond": 0.0
+      }
+    }
+  ],
+  "userLocationProfile": {
+    "frequentPlaces": [
+      {
+        "placeId": "ChIJRyvIFxG2j4AROHsVy4vNTb8",
+        "placeLocation": "40.7224223°, -74.0195881°",
+        "label": "LOCATION_A"
+      },
+      {
+        "placeId": "ChIJ3fkUMPC2j4ARsV5mJ9Tu1sR",
+        "placeLocation": "37.7749295°, -122.4194155°"
+      }
+    ],
+    "frequentTrips": [
+      {
+      "waypointIds": [
+        "ChIJRyvIFxG2j4AROHsVy4vNTb8",
+        "ChIJ623Kb248j4ARl73Wb2Qk8mr",
+        "ChIJ41MkDPO4j4AR7wI3aaCsZy9"
+      ],
+      "modeDistribution": [
+        {
+          "mode": "IN_PASSENGER_VEHICLE",
+          "rate": 0.8571428656578064
+        },
+        {
+          "mode": "WALKING",
+          "rate": 0.1428571492433548
+        }
+      ],
+      "startTimeMinutes": 553,
+      "endTimeMinutes": 566,
+      "durationMinutes": 13,
+      "confidence": 0.0,
+      "commuteDirection": "COMMUTE_DIRECTION_A_TO_B"
+    }
+  ],
+    "persona": {
+      "travelModeAffinities": [
+        {
+          "mode": "IN_PASSENGER_VEHICLE",
+          "affinity": 0.3455196976661682
+        },
+        {
+          "mode": "WALKING",
+          "affinity": 0.4906809985637665
+        },
+        {
+          "mode": "IN_BUS",
+          "affinity": 0.217921147868037224
+        },
+        {
+          "mode": "FLYING",
+          "affinity": 0.61433691754937172
+        },
+        {
+          "mode": "IN_SUBWAY",
+          "affinity": 0.21075268816202879
+        },
+        {
+          "mode": "CYCLING",
+          "affinity": 0.60358422938734293
+        },
+        {
+          "mode": "RUNNING",
+          "affinity": 0.20358422938734293
+        },
+        {
+          "mode": "IN_TRAIN",
+          "affinity": 0.40358422938734293
+        }
+      ]
+    }
+  }
+}
